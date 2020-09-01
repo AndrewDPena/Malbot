@@ -43,10 +43,10 @@ client.on('message', message => {
 		console.log('success');
 	}
 	if (message.author == amelia && message.guild.id == purpdogs){
-		var emoji = message.guild.emojis.cache.find(emoji => emoji.name === 'doggo');
-		message.react(emoji);
-		var emoji = message.guild.emojis.cache.find(emoji => emoji.name === 'mallo');
-		message.react(emoji);
+		var doggo = message.guild.emojis.cache.find(emoji => emoji.name === 'doggo');
+		var mallo = message.guild.emojis.cache.find(emoji => emoji.name === 'mallo');
+		message.react(doggo)
+			.then(() => message.react(mallo));
 		// console.log('meowdy');
 	}
 
