@@ -9,7 +9,7 @@ module.exports = {
         if (!args.length){
             data.push('Here\'s all the tricks I\'ve learned:');
             data.push(commands.map(command => command.name).join(', '));
-            data.push(`\nYou can send \`${prefix}help [command name]\` to get info on a specific command!`);
+            data.push(`\nYou can send \`${prefix}malp [command name]\` to get info on a specific command!`);
 
             return message.channel.send(data, { split: true });
         }
