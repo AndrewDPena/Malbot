@@ -1,6 +1,6 @@
 const fs = require('fs');
 const Discord = require('discord.js');
-const token = require('./token.json')
+const { token } = require('./token.json')
 const { prefix, amelia, flau, purpdogs } = require('./config.json');
 
 var args = process.argv.slice(2);
