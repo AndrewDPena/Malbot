@@ -45,6 +45,8 @@ client.on('message', message => {
 	if (message.author == amelia && message.guild.id == purpdogs){
 		var emoji = message.guild.emojis.cache.find(emoji => emoji.name === 'doggo');
 		message.react(emoji);
+		var emoji = message.guild.emojis.cache.find(emoji => emoji.name === 'mallo');
+		message.react(emoji);
 		// console.log('meowdy');
 	}
 
